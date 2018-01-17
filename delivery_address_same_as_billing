@@ -1,0 +1,32 @@
+      <script type="text/javascript">
+        $(document).ready(function()
+        {
+          //bind the "add_same" checkbox with a copy-fields event  $("#add_same"):checked == false
+          $("#add_same").bind("click",function()
+          {
+            //user has checked-OFF 
+            if($('input[name=add_same]').is(':checked'))
+            {
+              $("#ship_customer_name").val($("#customer_name").val()); 
+              $("#ship_street1").val($("#street1").val()); 
+              $("#ship_street2").val($("#street2").val()); 
+              $("#ship_city").val($("#city").val()); 
+              $("#ship_province").val($("#province").val()); 
+              $("#ship_postal_code").val($("#postal_code").val()); 
+              $("#ship_phone").val($("#phone").val()); 
+            }
+            //user has checked-ON
+            else 
+            {
+              $("#ship_customer_name").val(""); 
+              $("#ship_street1").val(""); 
+              $("#ship_street2").val(""); 
+              $("#ship_city").val(""); 
+              $("#ship_province").val('PROVINCE'); 
+              $("#ship_postal_code").val("");  
+              $("#ship_phone").val(""); 
+            }
+          });
+          
+        }) ;
+      </script>
