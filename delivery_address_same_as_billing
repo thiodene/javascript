@@ -29,4 +29,11 @@
           });
           
         }) ;
+        
+        /*
+          HTML for checkbox:
+          <input id="add_same" name="add_same" type="checkbox">
+        */
       </script>
+      
+    
