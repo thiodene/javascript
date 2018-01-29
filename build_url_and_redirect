@@ -1,0 +1,26 @@
+<script>
+  // ******************* Select the option of Inventory level and Redirect ****************************
+  $("#level_id li").click(function() 
+  {
+    // If the id exists warn the user with the corresponding Inventory Level value
+    var inv_level_id = this.id ;
+
+    // get id of clicked li
+    // Display the corresponding page that has to be reached on click
+    var page_url = window.location.href ;
+
+    // create an array of the current URL with the & removed to add the new Inventory level choice.
+    var url_array = page_url.split ("&") ;
+
+    var new_page_url = url_array[0] ;
+
+    // Add the GET inventory level to the URL and redirect the user
+    var new_page = new_page_url + '&inv_level_id=' + inv_level_id ;
+
+    // Save the cart before redirecting to a different warehouse
+    saveCartNewItems('window.location.href = "' + new_page + '" ;') ;
+
+    // Redirect to new warehouse
+    //window.location.href = new_page ;
+  });
+</script>
