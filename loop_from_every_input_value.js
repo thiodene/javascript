@@ -21,3 +21,6 @@ $( "input[name*='man']" ).val( "has man in it!" );
  
 </body>
 </html>
+
+# Original
+https://api.jquery.com/attribute-contains-selector/
