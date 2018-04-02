@@ -5,3 +5,7 @@
     $("input[azbd_type='time']").ptTimeSelect();
   });
 </script>
+
+
+# Original
+https://api.jquery.com/attribute-contains-selector/
