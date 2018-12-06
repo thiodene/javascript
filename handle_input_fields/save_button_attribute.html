@@ -1,0 +1,24 @@
+// ----------------------------------------JAVASCRIPT-----------------------------------
+<script>
+$(".btn_save_user").click(function()
+{
+
+  //For all settings use the Info variable
+  var info = '' ;
+
+  // Get the company information and save it as JSON
+  var info_user = '' ;
+
+  // Get the user ID if any (if not that's an INSERT)
+  user_id = $(this).attr("user_id") ;
+  if (user_id)
+    info_user += '{"user_id":"' + user_id + '",' ;
+  else
+    info_user += '{"user_id":"",' ;
+}
+</script>
+
+// ----------------------------------------HTML-----------------------------------------
+<html>
+<span user_id="51" class="big_button btn_save_user">SAVE</span>
+</html>
