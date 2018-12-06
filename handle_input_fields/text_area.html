@@ -1,0 +1,15 @@
+// ----------------------------------------JAVASCRIPT-----------------------------------
+<script>
+customer_message = $("#new_customer_contact_notes").val() ; 
+if (customer_message == "")
+{
+  alert("Please enter a Message!") ;
+  return false ;
+}
+</script>
+
+// ----------------------------------------HTML-----------------------------------------
+<html>
+<textarea id="new_customer_contact_notes" name="new_customer_contact_notes" cols="40" rows="6" title="Special notes on this customer" maxlength="4000"  >
+</textarea>
+</html>
