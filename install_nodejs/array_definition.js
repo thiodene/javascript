@@ -1,4 +1,4 @@
-# Name: array_definition.js
+# On the command line type: nodejs array_definition.js
 
 var myArray = new Array() ;
 
